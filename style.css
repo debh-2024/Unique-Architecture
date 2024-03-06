@@ -1,0 +1,223 @@
+/*General*/
+
+html {
+    font-family: "JetBrains Mono", "Victor Mono", sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/Pictures/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    color: #F0A500;
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 0 20px;
+    letter-spacing: 1.5px;
+}
+
+li a {
+    color: #F0A500;
+    text-decoration: none;
+}
+
+.logo {
+    background-image: url('/Pictures/Logo-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 400px;
+    height: 200px;
+    margin-left: -150px;
+}
+
+/*Banner*/
+
+.banner {
+    background-image: url(/Pictures/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+    align-items: end;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    font-family: "Victor Mono";
+    text-transform: uppercase;
+    text-shadow: 1px 1px;
+}
+
+/*Services*/
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.services h2 {
+    margin: 20px;
+    color: #CF7500;
+}
+
+.box {
+    height: 450px;
+    width: 400px;
+    background-color: #DBDBDB;
+    margin: 10px;
+    border: 5px solid #DBDBDB;
+}
+
+.building {
+    height: 300px;
+    width: 100%;
+    background-image: url('/Pictures/house-1477041_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.interior {
+    height: 300px;
+    width: 400px;
+    background-image: url('/Pictures/interior-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.landscape {
+    height: 300px;
+    width: 400px;
+    background-image: url('/Pictures/landscape-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*About*/
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.about h2 {
+    margin: 20px;
+}
+
+.box-2 {
+    height: 400px;
+    width: 400px;
+    background-color: #F0A500;
+    margin: 10px;
+    border: 5px solid #F0A500;
+}
+
+.jess {
+    height: 300px;
+    width: 400px;
+    background-image: url('/Pictures/woman-4702060.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lindsay {
+    height: 300px;
+    width: 400px;
+    background-image: url('/Pictures/woman-3060784.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Footer*/
+
+footer {
+    color: #F0A500;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    padding-top: 30px;
+}
+
+/*Media Sizing*/
+
+@media only screen and (max-width: 700px) {
+    .logo {
+        width: 200px;
+        height: 100px;
+        margin-left: -30px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+    .logo {
+        width: 300px;
+        height: 150px;
+        margin-left: -40px;
+    }
+
+    header {
+        height: 140px;
+        margin-top: -20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    header {
+        height: 160px;
+        margin-top: -40px;
+    }
+
+}
